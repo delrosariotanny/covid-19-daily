@@ -6,7 +6,9 @@ export class Covid19DataService {
   data: string;
 
   constructor(private papa: Papa) {
-    let csvData = '"https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"';
+    let csvData = '"https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"';
+
+    console.log(csvData);
 
     let options = {
         complete: (results, file) => {
